@@ -1,0 +1,92 @@
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+  
+   
+}
+
+body {
+    background-image:url("img/backgroundmedium.jpg");
+    background-size: cover;
+    background-position-y: -200px;
+}
+
+a {
+   font-size: 18px; 
+   color: #ff7d00;
+   text-decoration: none;
+}
+
+a:hover{
+    color: #726a2c
+}
+
+
+#login-container{
+    background-color:#171846 ;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 40px;
+    text-align: center;
+}
+
+form{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input{
+    border: 2px solid #ff7d00;;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px
+
+}
+
+#esqueceu-pass{
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"]{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 40px;
+    margin-top: 30px;
+    color: #deddce;
+    background-color: #ff7d00 ;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #726a2c; 
+    transition: .5s;
+}
+
+p {
+    color: #deddce;  
+    font-weight: bold;
+}
+
+#cadastro-container, #cadastro-container p {
+    margin-bottom: 20px;
+}
