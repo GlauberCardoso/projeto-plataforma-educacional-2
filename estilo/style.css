@@ -137,9 +137,9 @@ main > section {
 }
 
 section {
+    background-color: rgba(135, 206, 250, 0.26);
     height: 1200px;
     grid-area: section;
-    background-color: white;
     text-align: justify;
     padding: 30px;
 }
