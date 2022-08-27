@@ -19,6 +19,16 @@ body {
         grid-template-rows: 40px 1fr;
 }
 
+input, button {
+    position: relative;
+    left: 1100px;
+    bottom: 150px;
+}
+
+button {
+    border-radius: 25%;
+}
+
 header {
     position: fixed;
     grid-area: header;
