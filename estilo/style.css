@@ -25,10 +25,6 @@ input, button {
     bottom: 150px;
 }
 
-button {
-    border-radius: 25%;
-}
-
 header {
     position: fixed;
     grid-area: header;
