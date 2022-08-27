@@ -8,7 +8,7 @@ body {
     margin: 300px 0px 0px 0px;
     height: 100vh;
     width: 100%;
-
+    background-color: rgba(135, 206, 250, 0.26);
     display: grid;
     grid-template-areas:
         "header header"
@@ -17,12 +17,6 @@ body {
         "footer footer";
     
         grid-template-rows: 40px 1fr;
-}
-
-input, button {
-    position: relative;
-    left: 1100px;
-    bottom: 150px;
 }
 
 header {
@@ -38,6 +32,10 @@ header {
     padding: 0px 8px;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.123);
     z-index: 20;
+}
+
+header > a > img {
+    top: 0px;
 }
 
 a:-webkit-any-link {
@@ -79,10 +77,30 @@ a .acessar:hover {
     color: white;
 }
 
+body img {
+    position: relative;
+    
+    bottom: 170px;
+    padding-left: 10px;
+}
+
+/* body > div > span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    position: relative;
+    bottom: 10px;
+} */
+
+input, button {
+    position: relative;
+    left: 500px;
+    bottom: 170px;
+}
+
 main {
     grid-area: main;
     background-color: rgb(27, 19, 99);
-    height: 600px;
+    height: 758.81px;
 }
 
 main > video {
@@ -110,7 +128,7 @@ main > section {
     text-shadow: 1px 1px 0px black;
     height: 300px;
     width: 600px;
-    padding: 110px 0px 190px 0px;
+    padding: 110px 0px 350px 0px;
     top: 340px;
     bottom: -500;
     left: 0px;
