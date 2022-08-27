@@ -92,9 +92,11 @@ body img {
 } */
 
 input, button {
+    background-color: rgba(211, 211, 211, 0.5);
     position: relative;
     left: 500px;
     bottom: 170px;
+    border: 1px solid black;
 }
 
 main {
