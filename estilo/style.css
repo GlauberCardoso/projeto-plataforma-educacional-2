@@ -77,11 +77,17 @@ a .acessar:hover {
     color: white;
 }
 
-body img {
+.languages {
     position: relative;
-    
+    left: 10px;
     bottom: 170px;
-    padding-left: 10px;
+}
+
+.search {
+    position: relative;
+    width: 215px;
+    bottom: 170px;
+    left: 530px;
 }
 
 /* body > div > span {
@@ -90,14 +96,6 @@ body img {
     position: relative;
     bottom: 10px;
 } */
-
-input, button {
-    background-color: rgba(211, 211, 211, 0.5);
-    position: relative;
-    left: 500px;
-    bottom: 170px;
-    border: 1px solid black;
-}
 
 main {
     grid-area: main;
