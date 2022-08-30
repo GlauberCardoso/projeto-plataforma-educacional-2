@@ -114,6 +114,17 @@ main p {
     text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.555);
 }
 
+.cadastre-se > p{
+    position: relative;
+    bottom: 200px;
+    left: 170px;
+    margin: 0px;
+    width: 125px;
+    border: 1px solid #FF7D00;
+    background-color: #FF7D00;
+    border-radius: 20px;
+}
+
 main > section {
     position: absolute;
     display: inline-block;
