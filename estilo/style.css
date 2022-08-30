@@ -90,13 +90,6 @@ a .acessar:hover {
     left: 530px;
 }
 
-/* body > div > span {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    position: relative;
-    bottom: 10px;
-} */
-
 main {
     grid-area: main;
     background-color: rgb(27, 19, 99);
