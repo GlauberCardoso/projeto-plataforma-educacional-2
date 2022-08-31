@@ -12,11 +12,11 @@ body {
 h2{
     font-family: OpenSans, sans-serif;
     font-size: 35px;
-    color: #171846;
+    color: #FF7D00;
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: 1px; 
-    text-shadow: 6px 6px 6px white;
+    text-shadow: 6px 6px 6px rgb(143, 134, 134);
 }
 
 h3{
@@ -38,7 +38,7 @@ a{
     text-decoration: none;
     font-size: 22px;
     text-transform: uppercase;
-    color: #FF7D00;
+    color: whitesmoke;
     text-shadow: 8px 8px 8px #171846;
 }
 
@@ -55,9 +55,7 @@ ul{
      
     display: flex;
     text-align: center;
-    
-    /*border-radius:100% 0% 100% 0% / 0% 20% 100% 100%;*/
-    background-image: linear-gradient( to right,#171846, #171846, #96ADC8, #96adc8, white,white, #FF7D00);
+    background-image: linear-gradient( to right,#171846, #171846, white, white);
     }
 
 #container2{
@@ -72,24 +70,20 @@ ul{
     margin: 20px;
     padding: 20px;
     line-height: 1.6;
-    /*border: 1px solid #FF7D00;*/
+    border: 1px solid #FF7D00;
+    border-radius: 2%;
     
+}
+
+
+
+#container-intercambio p{
+    text-align: center;
+    color: whitesmoke;
 }
 
 #container-intercambio h2{
-    color: #FF7D00;
     text-shadow: 6px 6px 6px black;
-    
-}
-
-#container-intercambio p {
-    color: wheat;
-    text-align: center;
-    
-}
-
-#container-intercambio h3{
-    color: wheat
 }
 
 
@@ -114,12 +108,14 @@ ul{
 
 #container-avancado{
    width: 600px;
-   height: 350px;
+   height: 250px;
    padding: 20px;
    margin-top: 50px;
-   /*border: 1px solid #FF7D00;*/
+   border: 1px solid #FF7D00;
+   border-radius: 2%;
    
 }
+
 
 #container-avancado h3{
     text-align: end;
@@ -128,29 +124,34 @@ ul{
 
 .horizontal{
     display: flex;
-    margin-top: 7%;
+    margin-top: 10%;
     justify-content: space-around;
-    /*background-image: linear-gradient( to right,#171846, #96ADC8, white);
-    border-radius:0% 100% 0% 100% / 0% 100% 0% 100%;*/
+    
     
 }
 
 
-#container-intermediario{
+#container-intermediario, #container-basico{
     width: 300px;
     height: 300px;
-    /*border: 1px solid #FF7D00;*/
+    border: 1px solid #FF7D00;
+    border-radius: 2%;
     
     
 }
 
+#container-basico h2{
+    text-shadow: 8px 8px 8px rgb(143, 134, 134);
 
-#container-basico{
-    width: 300px;
-    height: 300px;   
-    /*border: 1px solid #FF7D00;*/
-    
 }
+
+#container-intermediario h2{
+    text-shadow: 8px 8px 8px rgb(143, 134, 134);
+
+}
+
+
+
 
 #container-basico p{
     text-align: end;
