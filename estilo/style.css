@@ -196,32 +196,40 @@ summary, details {
 
 details > p {
     width: 650px;
+    font-size: 1.1em;
 }
 
 .pf details summary {
-    background-color: #FF7D00;
+    background-color: rgb(23, 24, 70);
     color: white;
     padding: 2%;
     border-radius: 20px;
-    border-bottom: 2px solid #FF7D00;
+    border-bottom: 2px solid rgb(23, 24, 70);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
     margin-bottom: 20px;
     width: 600px;
+    font-size: 1.3em;
 }
 
 .pf details summary:hover {
     scale: 110%;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.363);
+    cursor: pointer;
 }
 
 section#faq h1 {
-    margin-left: 550px;
+    font-size: 3em;
+    text-align: center;
+    margin-left: 250px;
     margin-bottom: 40px;
+    margin-right: 250px;
+    margin-top: 120px;
     color: rgb(27, 19, 99);
 }
 
 div.pf {
     margin-left: 370px;
+    margin-bottom: 350px;
 }
 
 section#faq {
@@ -240,7 +248,67 @@ section#faq {
 section#contact {
     grid-area: cont;
     height: 500px;
-    width: 100%;
+    width: 1200px;
+    margin-top: 600px;
+    margin-left: 100px;
+    margin-bottom: 450px;
+}
+
+#contact h1{
+    width: 450px;
+    font-size: 3em;
+    margin-top: 150px;
+    color: rgb(23, 24, 70);
+}
+
+#contact h2 {
+    width: 500px;
+    font-size: 1.5em;
+    color: #FF7D00;
+}
+
+#contact form input {
+    border-radius: 20px;
+    border: 0.5px;
+    padding: 10px;
+}
+
+#contact form textarea {
+    border: 0px;
+}
+
+#contact form select {
+    border-radius: 20px;
+    border: 0px;
+    padding: 10px;
+    width: 400px;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.enviar-formulario > input {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
+    padding: 5px 10px; 
+    background-color: #FF7D00; 
+    color: white; 
+    border-radius: 20px; 
+    margin-top: 20px;
+}
+
+.enviar-formulario > input:hover {
+    cursor: pointer;
+    background-color: #ff7b00b2;
+}
+
+#contact img {
+    position: relative;
+    margin-bottom: 0px;
+    bottom: 600px;
+    margin-left: 580px;
+}
+
+#contact img:hover {
+    scale: 90%;
 }
 
 footer {
@@ -248,8 +316,10 @@ footer {
     background-color: rgb(23, 24, 70);
     color: white;
     text-align: center;
-    padding-top: 18px;
-    height: 100%;
+    padding: 10px 0px;
+    position: relative;
+    bottom: -500px;
+    margin-top: 150px;
 }
 
 footer a {
