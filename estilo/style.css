@@ -13,10 +13,10 @@ body {
     grid-template-areas:
         "header header"
         "main main"
-        "section section"
+        "dep dep"
+        "faq faq"
+        "cont cont"
         "footer footer";
-    
-        grid-template-rows: 40px 1fr;
 }
 
 header {
@@ -133,7 +133,7 @@ main p {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
 }
 
-.cadastre-se > a> p:hover {
+.cadastre-se > a > p:hover {
     scale: 110%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.466);
 }
@@ -146,18 +146,101 @@ main > section {
     text-shadow: 1px 1px 0px black;
     height: 300px;
     width: 600px;
-    padding: 110px 0px 350px 0px;
-    top: 340px;
+    padding: 110px 0px 349px 0px;
+    top: 334px;
     bottom: -500;
     left: 0px;
 }
 
-section {
-    background-color: rgba(135, 206, 250, 0.26);
-    height: 1200px;
-    grid-area: section;
+section#depoimentos {
+    grid-area: dep;
+    height: 500px;
+    width: 100%;
+    margin-top: 150px;
+    background-color: rgb(27, 19, 99);
+}
+
+section#depoimentos > h1{
+    text-align: center;
+    font-size: 3em;
+    color: #FF7D00;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.603);
+    margin-top: 120px;
+    margin-right: 50px;
+}
+
+section#depoimentos img {
+    position: relative;
+    top: auto;
+    bottom: 230px;
+    z-index: 10;
+}
+
+section#depoimentos p{
+    position: relative;
+    display: inline-block;
+    text-align: center;
     text-align: justify;
-    padding: 30px;
+    height: 150px;
+    width: 200px;
+    padding: 100px 20px;
+    margin: 110px 10px;
+    background-color: white;
+    font-size: 1.1em;
+}
+
+summary, details {
+    width: 350px;
+    left: 200px;
+}
+
+details > p {
+    width: 650px;
+}
+
+.pf details summary {
+    background-color: #FF7D00;
+    color: white;
+    padding: 2%;
+    border-radius: 20px;
+    border-bottom: 2px solid #FF7D00;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.pf details summary:hover {
+    scale: 110%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.363);
+}
+
+section#faq h1 {
+    margin-left: 550px;
+    margin-bottom: 40px;
+    color: rgb(27, 19, 99);
+}
+
+div.pf {
+    margin-left: 370px;
+}
+
+section#faq {
+    grid-area: faq;
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 100%;
+    top: 600px;
+    bottom: 0px;
+    margin-bottom: 100px;
+}
+
+section#contact {
+    grid-area: cont;
+    height: 500px;
+    width: 100%;
 }
 
 footer {
@@ -165,7 +248,8 @@ footer {
     background-color: rgb(23, 24, 70);
     color: white;
     text-align: center;
-    padding: 8px;
+    padding-top: 18px;
+    height: 100%;
 }
 
 footer a {
