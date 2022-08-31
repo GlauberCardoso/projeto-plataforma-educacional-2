@@ -81,13 +81,18 @@ a .acessar:hover {
     position: relative;
     left: 10px;
     bottom: 170px;
+    width: 100px;
+}
+
+.languages img:hover {
+    scale: 120%;
 }
 
 .search {
     position: relative;
     width: 215px;
     bottom: 170px;
-    left: 530px;
+    left: 500px;
 }
 
 main {
@@ -125,10 +130,12 @@ main p {
     padding: 10px 60px;
     text-decoration: none;
     color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
 }
 
 .cadastre-se > a> p:hover {
     scale: 110%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.466);
 }
 
 
