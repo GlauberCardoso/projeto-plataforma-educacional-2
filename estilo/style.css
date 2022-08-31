@@ -8,7 +8,7 @@ body {
     margin: 300px 0px 0px 0px;
     height: 100vh;
     width: 100%;
-
+    background-color: rgba(135, 206, 250, 0.26);
     display: grid;
     grid-template-areas:
         "header header"
@@ -17,12 +17,6 @@ body {
         "footer footer";
     
         grid-template-rows: 40px 1fr;
-}
-
-input, button {
-    position: relative;
-    left: 1100px;
-    bottom: 150px;
 }
 
 header {
@@ -38,6 +32,10 @@ header {
     padding: 0px 8px;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.123);
     z-index: 20;
+}
+
+header > a > img {
+    top: 0px;
 }
 
 a:-webkit-any-link {
@@ -79,10 +77,23 @@ a .acessar:hover {
     color: white;
 }
 
+.languages {
+    position: relative;
+    left: 10px;
+    bottom: 170px;
+}
+
+.search {
+    position: relative;
+    width: 215px;
+    bottom: 170px;
+    left: 530px;
+}
+
 main {
     grid-area: main;
     background-color: rgb(27, 19, 99);
-    height: 600px;
+    height: 758.81px;
 }
 
 main > video {
@@ -103,6 +114,24 @@ main p {
     text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.555);
 }
 
+.cadastre-se > a > p{
+    position: relative;
+    bottom: 200px;
+    left: 150px;
+    margin: 0px;
+    width: 125px;
+    background-color: #FF7D00;
+    border-radius: 20px;
+    padding: 10px 60px;
+    text-decoration: none;
+    color: white;
+}
+
+.cadastre-se > a> p:hover {
+    scale: 110%;
+}
+
+
 main > section {
     position: absolute;
     display: inline-block;
@@ -110,16 +139,16 @@ main > section {
     text-shadow: 1px 1px 0px black;
     height: 300px;
     width: 600px;
-    padding: 110px 0px 190px 0px;
+    padding: 110px 0px 350px 0px;
     top: 340px;
     bottom: -500;
     left: 0px;
 }
 
 section {
+    background-color: rgba(135, 206, 250, 0.26);
     height: 1200px;
     grid-area: section;
-    background-color: white;
     text-align: justify;
     padding: 30px;
 }
