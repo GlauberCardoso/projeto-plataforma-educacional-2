@@ -107,17 +107,22 @@
         <h1>Entrar em Contato!</h1>
         <h2>Gostaríamos de ajudá-lo a iniciar sua jornada com a MGM Online.</h2>
         <form action="" method="post">
-            <p>Nome Completo *</p>
-            <input type="text" placeholder="Nome" required size="50">
-            <p>Email *</p>
-            <input type="email" placeholder="Email" required size="50">
-            <p>País *</p>
-            <input type="text" placeholder="Digite o nome do seu país" required size="50">
-            <p>Mensagem *</p>
-            <label for="message"></label>
-            <textarea id="message" placeholder="Mensagem" rows="10" cols="53"></textarea>
+            <label for="inome">Nome Completo *</label><br>
+            <input type="text" id="inome" placeholder="Nome" required size="50">
             <p></p>
-            <label for="itemselect">Como você ficou sabendo sobre nós? *</label><br>
+
+            <label for="iemail">Email *</label><br>
+            <input type="email" id="iemail" placeholder="Email" required size="50">
+            <p></p>
+
+            <label for="ipais">País *</label><br>
+            <input type="text" id="ipais" placeholder="Digite o nome do seu país" required size="50">
+            <p></p>
+
+            <label for="imsg">Mensagem *</label><br>
+            <textarea id="imsg" placeholder="Mensagem" rows="10" cols="53" required></textarea>
+            <p></p>
+            <label for="itemselect">Como você ficou sabendo sobre nós?</label>
             <p>
                 <select name="item" id="itemselect">
                     <option value="Select">- Selecione -</option>
@@ -131,12 +136,12 @@
                 </select>
             </p>
             <p>
-                <input type="checkbox" name="check" id="termo-privacidade">
+                <input type="checkbox" name="check" id="termo-privacidade" required>
                 <label for="termo-privacidade">Li e concordo com a <a href="#">Termos e Condições</a> e <a href="#">Política de Privacidade</a></label><br>
             </p>
             <p></p>
                 <div class="enviar-formulario">
-                    <input type="button" value="Enviar formulário">
+                    <button type="submit">Enviar formulário</button>
                 </div>
         </form>
         <img src="assets/img/image-girl-contact.jpg" alt="girl-contact" width="600" height="450">
