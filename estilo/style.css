@@ -13,10 +13,10 @@ body {
     grid-template-areas:
         "header header"
         "main main"
-        "section section"
+        "dep dep"
+        "faq faq"
+        "cont cont"
         "footer footer";
-    
-        grid-template-rows: 40px 1fr;
 }
 
 header {
@@ -81,13 +81,18 @@ a .acessar:hover {
     position: relative;
     left: 10px;
     bottom: 170px;
+    width: 100px;
+}
+
+.languages img:hover {
+    scale: 120%;
 }
 
 .search {
     position: relative;
     width: 215px;
     bottom: 170px;
-    left: 530px;
+    left: 500px;
 }
 
 main {
@@ -125,10 +130,12 @@ main p {
     padding: 10px 60px;
     text-decoration: none;
     color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
 }
 
-.cadastre-se > a> p:hover {
+.cadastre-se > a > p:hover {
     scale: 110%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.466);
 }
 
 
@@ -139,18 +146,177 @@ main > section {
     text-shadow: 1px 1px 0px black;
     height: 300px;
     width: 600px;
-    padding: 110px 0px 350px 0px;
-    top: 340px;
+    padding: 110px 0px 349px 0px;
+    top: 334px;
     bottom: -500;
     left: 0px;
 }
 
-section {
-    background-color: rgba(135, 206, 250, 0.26);
-    height: 1200px;
-    grid-area: section;
+section#depoimentos {
+    grid-area: dep;
+    height: 500px;
+    width: 100%;
+    margin-top: 150px;
+    background-color: rgb(27, 19, 99);
+}
+
+section#depoimentos > h1{
+    text-align: center;
+    font-size: 3em;
+    color: #FF7D00;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.603);
+    margin-top: 120px;
+    margin-right: 50px;
+}
+
+section#depoimentos img {
+    position: relative;
+    top: auto;
+    bottom: 230px;
+    z-index: 10;
+}
+
+section#depoimentos p{
+    position: relative;
+    display: inline-block;
+    text-align: center;
     text-align: justify;
-    padding: 30px;
+    height: 150px;
+    width: 200px;
+    padding: 100px 20px;
+    margin: 110px 10px;
+    background-color: white;
+    font-size: 1.1em;
+}
+
+summary, details {
+    width: 350px;
+    left: 200px;
+}
+
+details > p {
+    width: 650px;
+    font-size: 1.1em;
+}
+
+.pf details summary {
+    background-color: rgb(23, 24, 70);
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+    border-bottom: 2px solid rgb(23, 24, 70);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
+    margin-bottom: 20px;
+    width: 600px;
+    font-size: 1.3em;
+}
+
+.pf details summary:hover {
+    scale: 110%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.363);
+    cursor: pointer;
+}
+
+section#faq h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-left: 250px;
+    margin-bottom: 40px;
+    margin-right: 250px;
+    margin-top: 120px;
+    color: rgb(27, 19, 99);
+}
+
+div.pf {
+    margin-left: 370px;
+    margin-bottom: 350px;
+}
+
+section#faq {
+    grid-area: faq;
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 100%;
+    top: 600px;
+    bottom: 0px;
+    margin-bottom: 100px;
+}
+
+section#contact {
+    grid-area: cont;
+    height: 500px;
+    width: 1200px;
+    margin-top: 600px;
+    margin-left: 100px;
+    margin-bottom: 450px;
+}
+
+#contact h1{
+    width: 450px;
+    font-size: 3em;
+    margin-top: 150px;
+    color: rgb(23, 24, 70);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+}
+
+#contact h2 {
+    width: 500px;
+    font-size: 1.5em;
+    color: #FF7D00;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.336);
+}
+
+#contact form input {
+    border-radius: 10px;
+    border: 0.5px;
+    padding: 10px;
+}
+
+#contact form textarea {
+    border: 0px;
+}
+
+#contact form select {
+    border-radius: 10px;
+    border: 0px;
+    padding: 10px;
+    width: 400px;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.enviar-formulario > button {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
+    padding: 10px 15px; 
+    background-color: #FF7D00; 
+    color: white; 
+    border: 0px;
+    border-radius: 20px; 
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.enviar-formulario > button:hover {
+    cursor: pointer;
+    background-color: #ff7b00b2;
+    scale: 95%;
+}
+
+#contact img {
+    position: relative;
+    margin-bottom: 0px;
+    bottom: 600px;
+    margin-left: 580px;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.199);
+}
+
+#contact img:hover {
+    scale: 90%;
+    transition-delay: .01s;
 }
 
 footer {
@@ -158,7 +324,10 @@ footer {
     background-color: rgb(23, 24, 70);
     color: white;
     text-align: center;
-    padding: 8px;
+    padding: 10px 0px;
+    position: relative;
+    bottom: -500px;
+    margin-top: 150px;
 }
 
 footer a {
