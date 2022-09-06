@@ -1,12 +1,19 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    }
+ 
+    @font-face {
+     font-family: OpenSans;
+     src: url(../estilo/fontes/OpenSans-VariableFont_wdth\,wght.ttf);
+    }
+
 body {
     background-image: url(img/dublin-irlanda-1642527116472_v2_900x506.jpg.webp);
-    background-repeat: repeat-y;
     background-clip: border-box;
     background-size: cover;
     background-position-y: -100px;
-}
-
-#cadastro-container{
     background-color:#171846 ;
     width: 400px;
     margin-left: auto;
@@ -15,4 +22,26 @@ body {
     margin-top: 10vh;
     border-radius: 40px;
     text-align: center;
+}
+
+#cadastro-container, form{
+    border-radius: 5px;
+}
+
+
+.fa { 
+    padding: px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #55ACEE;
+    color: white;
 }
