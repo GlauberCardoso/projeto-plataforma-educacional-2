@@ -130,4 +130,21 @@ li .mymenu:hover {
   scroll-snap-align: start;
   border-radius: 30px;
  }
- 
+ .card{
+background-color: #fff ;
+ }
+ h1{
+  background-color: #fff;
+ }
+ p{
+  background-color: #fff;
+ }
+ h4{
+  background-color: #fff;
+ }
+ h2{
+  background-color: #fff;
+ }
+ h3{
+  background-color: #fff;
+ }
