@@ -19,10 +19,10 @@ li .mymenu {
    font-family: 'open_sansbold';
    font-size:1.6em;
    text-decoration: none;
-   color:#4c4c4c;
-   -webkit-border-box: 0 1px 0 0 #4c4c4c;
+  
+   
    border-bottom: 4px solid transparent;
-   -webkit-transition: border-bottom .3s linear;
+   
 
 }
 
@@ -129,12 +129,19 @@ li .mymenu:hover {
   padding: 30px;
   scroll-snap-align: start;
   border-radius: 30px;
+  
  }
  .card{
 background-color: #fff ;
  }
  h1{
-  background-color: #fff;
+  
+    font-family: OpenSans, sans-serif;
+    font-size: 35px;
+    color: #FF7D00;
+    font-weight: bolder;
+   
+  
  }
  p{
   background-color: #fff;
@@ -143,8 +150,23 @@ background-color: #fff ;
   background-color: #fff;
  }
  h2{
-  background-color: #fff;
+  font-family: OpenSans, sans-serif;
+  font-size: 35px;
+  color: #FF7D00;
+  font-weight: bolder;
+  
  }
  h3{
   background-color: #fff;
  }
+ .img{
+  height: 200px;
+  width: 200px;
+ }
+ .mymenu{
+  font-family: OpenSans, sans-serif;
+  font-size: 35px;
+  color: #FF7D00;
+  font-weight: bolder;
+ 
+}
