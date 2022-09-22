@@ -1,0 +1,75 @@
+
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.div-intercambio {
+  background-image:url("imagens/new-zeland.jpg");
+  background-size: cover;
+}
+
+.div-avancado{
+  background-color: #171846;
+}
+
+.img-avancado{
+  background-image:url("imagens/australia.jpg");
+  background-size: cover;
+}
+
+.div-intermediario {
+  background-color: #171846;
+}
+
+.img-intermediario {
+  background-image:url("imagens/eua1.jpg");
+  background-size: cover;
+}
+
+.div-basico{
+  background-color: #171846;
+}
+
+.img-basico {
+  background-image:url("imagens/inglaterra1.jpg");
+  background-size: cover;
+
+}
+
+
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
