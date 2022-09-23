@@ -1,40 +1,96 @@
 
+
+
 .container {
   max-width: 960px;
+}
+
+header {
+  width: 100%;
+  background-color: #171846;
+}
+
+.logo {
+  width: 15rem;
+  background-size: cover;
+}
+
+.navbar {
+  background-color: #171846;
+  box-shadow: 5px 5px 50px #00000052;
+}
+
+#navbarNav {
+  justify-content: right;
+}
+
+.navbar-toggler {
+  flex-wrap: nowrap;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.acessar {
+  margin-left: 70px;
+  margin-right: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.384);
+  background-color: #FF7D00;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.acessar:hover {
+  scale: 105%;
+  color: white;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);
+  transform: translate(3px);
+  font-weight: 400;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../assets/img/menu.png);
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.384);
+  transform: translate(-3px, -3px);
+  font-weight: 400;
 }
 
 h1, h2, p {
   color: #fff;
   text-shadow: black 0.2em 0.2em 0.2em;
+
 }
 
 
-/*
- * Custom translucent site header
- */
-
-.site-header {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-.site-header a {
-  color: #8e8e8e;
-  transition: color .15s ease-in-out;
-}
-.site-header a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
 .btn {
   background-color: #FF7D00;
-  
-}
+  border: #171846;
+ }
 
+
+
+.intercambio button {
+  background-color:#171846;
+}
 
 
 
@@ -83,14 +139,14 @@ h1, h2, p {
 
 }
 
-.row{
-  border: red solid 2px;
-}
 
-.footer{
+.footer img {
+  width: 5em;
+  height: 5em;
   float: right;
+  margin-right: 1em;
+  
 }
-
 /*
  * Extra utilities
  */
