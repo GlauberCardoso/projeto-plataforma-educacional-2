@@ -3,6 +3,12 @@
   max-width: 960px;
 }
 
+h1, h2, p {
+  color: #fff;
+  text-shadow: black 0.2em 0.2em 0.2em;
+}
+
+
 /*
  * Custom translucent site header
  */
@@ -24,11 +30,23 @@
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */
+.btn {
+  background-color: #FF7D00;
+  
+}
+
+
+
+
+
 
 .div-intercambio {
   background-image:url("imagens/new-zeland.jpg");
   background-size: cover;
 }
+
+
+
 
 .div-avancado{
   background-color: #171846;
@@ -37,6 +55,9 @@
 .img-avancado{
   background-image:url("imagens/australia.jpg");
   background-size: cover;
+  width: 80%; 
+  height: 300px; 
+  border-radius: 21px 21px 0 0;
 }
 
 .div-intermediario {
@@ -46,10 +67,14 @@
 .img-intermediario {
   background-image:url("imagens/eua1.jpg");
   background-size: cover;
+  width: 80%; 
+  height: 300px; 
+  border-radius: 21px 21px 0 0;
 }
 
 .div-basico{
   background-color: #171846;
+ 
 }
 
 .img-basico {
@@ -58,8 +83,13 @@
 
 }
 
+.row{
+  border: red solid 2px;
+}
 
-
+.footer{
+  float: right;
+}
 
 /*
  * Extra utilities
