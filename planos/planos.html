@@ -1,76 +1,105 @@
-<!DOCTYPE html>
-<html lang="pt-b">
-<head>
+<!doctype html>
+<html lang="pt-br">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/favicon/icone-logo-azul.PNG" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> 
+    <link href="style/planos.css" rel="stylesheet">
     <title>Planos</title>
-</head>
 
-<body>
-<main>
-<div class="geral">
-    <div class="container"> 
+  </head>
 
-        <div id="container-intercambio">
-                <div>  
-                     <h2>Intercâmbio</h2>
-                     <p>Escolha o Pais e nós cuidamos de toda a burocracia. </p>
-                     <p>24x sem juros</p>
-                     <a href="http://127.0.0.1:5500/intercambio.html">Saiba mais...</a>
-                </div>  
-                <div class="imagem" id="imgg">
-                     <img src="imagens/inglaterra1.jpg" alt="Imagem Inglaterra">
-                     <img src="imagens/inglaterra.jpg" alt="Imagem Inglaterra">
-                     
-               </div>
-        </div>
+  <body>
     
+    <header>
 
-    <div id="container2">
+      <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img class="d-flex logo img-fluid" src="../assets/logo/logo-fundo-azul.PNG" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="planos.html">Planos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Depoimentos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Contato</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link acessar" href="../login/login.html">ACESSAR</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-        <div id="container-avancado">
-            <h2>Avançado</h2>
-            <p>Comprando esse curso, você terá acesso ao Plano Básico e Intermediário.</p>
-            <h3>make your dreams come true!!!</h3>
-            
-        </div>
-<div>
-    <div class="horizontal">
+  </header>
 
-        <div id="container-intermediario">
-             <h2>Intermediário</h2>
-             <ul>
-                <li>Conteúdo exclusivo;</li>
-                <li>Pagamento facilitado;</li>
-                <li>Preços acessíveis.</li>
-             </ul>
-             <p>come be happy!!!</p>
-             
-        </div>
-
-        <div id="container-basico">
-             <h2>Básico</h2>
-             <ul>
-                <li>Aprenda rápido;</li>
-                <li>Concorra a bolsas;</li>
-                <li>Pague parcelado.</li>
-             </ul>
-             <p>let's go!</p>
-             
-     </div>
-
+<main>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center div-intercambio">
+    <div class="intercambio col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal">Intercâmbio</h1>
+      <p class="lead fw-normal">Escolha o Pais e nós cuidamos de toda a burocracia.<br>enjoy this experience!<br>24x sem juros</p>
+      <button type="button" class="btn btn-primary">Saiba Mais</button>
     </div>
-
+    
+    
   </div>
 
-  
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="div-avancado me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Plano Avançado</h2>
+        <p class="lead">Comprando esse plano o acesso é liberado para todos os cursos da plataforma. Live your dreams!</p>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+      <div class="img-avancado shadow-sm mx-auto" ></div>
+      
+    </div>
+    <div class="div-intermediario me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Plano Intermediário</h2>
+        <p class="lead">Adquire e ganhe acesso gratuito ao módulo básico para relembrar conceitos sempre que precisar. Let's Go!</p>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+      <div class="img-intermediario shadow-sm mx-auto" ></div>
+    </div>
+  </div>
 
-
-</div>
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="div-basico me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Plano Básico</h2>
+        <p class="lead">Comece agora e concorra a bolsas de estudos exclusivas e personalizadas.</p>
+        <button type="button" class="btn btn-primary">Comprar</button>
+      </div>
+      <div class="img-basico shadow-sm mx-auto" ></div>
+    </div>
+    
 </main>
-<script src="carrosel.js"></script>
-</body>
+
+<footer>
+  <div class="footer">
+      <img  src="../assets/img/icons8-whatsapp-48.png" alt="Whatsapp">
+  </div>
+</footer>
+
+
+    
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>    
+  </body>
 </html>
