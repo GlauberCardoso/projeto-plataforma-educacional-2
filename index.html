@@ -4,144 +4,266 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/index.css">
+    <link rel="stylesheet" href="estilo/media-queries.css">
     <link rel="shortcut icon" href="assets/favicon/icone-logo-azul.PNG" type="image/x-icon">
-    <link rel="stylesheet" href="estilo/style.css">
     <title>MGM English</title>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="assets/logo/logo-fundo-azul.PNG" alt="logo"></a>
-        <div>
-            <a href="planos/planos.html"><span class="menu">Planos</span></a>
-            <a href="#"><span class="menu">Sobre</span></a>
-            <a href="#depoimentos"><span class="menu">Depoimentos</span></a>
-            <a href="#contact"><span class="menu">Contato</span></a>
-            <a href="#faq"><span class="menu">FAQ</span></a>
-            <a href="login/login.html"><span class="acessar">ACESSAR</span></a>
-        </div>
-    </header>
-    <div class="languages">
-        <a href="#"><img src="assets/favicon/brazil-icon.png" alt="BRAZIL" width="30px" height="30px"></a>
-        <a href="#"><img src="assets/favicon/us-icon.png" alt="US" width="30px" height="30px"></a>
-        <a href="#"><img src="assets/favicon/spain-icon.png" alt="SPAIN" width="30px" height="30px"></a>
-    </div>
-    <form>
-        <div class="search">
-          <input type="search" id="mySearch" name="q" placeholder="  Pesquisar..">
-          <button>🔎</button>
-        </div>
-      </form>
-    <main>
-        <video src="assets/videos/video-body.mp4" autoplay muted preload="auto" loop>video</video>
-        <section>
-            <h1>
-                MGM English Online. <br>
-                Estude de onde estiver, 100% Digital.
-            </h1>
-            <p>
-                Com a MGM English você pode mais. <br>
-                Estude no seu ritmo.
-            </p>
-        </section>
-            <div class="cadastre-se">
-                <a href="formulário-cadastro/formulario.html">
-                    <p>
-                        Cadastre-se
-                    </p>
-                </a>
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="d-flex logo img-fluid" src="assets/logo/logo-fundo-azul.PNG" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Planos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link acessar" href="#">ACESSAR</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-    </main>
+          </nav>
+
+    </header>
+
+    <div class="bd-subnavbar mt-3 py-5" aria-label="Secondary navigation">
+      <div class="d-flex bd-highlight mt-4">
+        <div class="p-2 flex-grow-1 bd-highlight">
+          <div class="languages col-1">
+            <div class="d-flex bd-highlight">
+              <div class="ps-0 py-1 flex-fill bd-highlight"><a href="#"><img class="img-languages" src="assets/favicon/brazil-icon.png" alt="BRAZIL" width="30px" height="30px"></a></div>
+              <div class="ps-2 py-1 flex-fill bd-highlight"><a href="#"><img class="img-languages" src="assets/favicon/us-icon.png" alt="US" width="30px" height="30px"></a></div>
+              <div class="ps-2 py-1 flex-fill bd-highlight"><a href="#"><img class="img-languages" src="assets/favicon/spain-icon.png" alt="SPAIN" width="30px" height="30px"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="video-banner">
+        <video class="video" src="assets/videos/video-body.mp4" autoplay muted preload="auto" loop>
+          
+        </video>
+        <div class="marketing-description" data-aos="fade-right"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="2000">
+          <h1 class="marketing-titulo">
+            MGM English Online. <br>
+            Estude de onde estiver, 100% Digital.
+          </h1>
+          <p class="marketing-subtitulo">
+            Com a MGM English você pode mais. <br>
+            Estude no seu ritmo.
+          </p>
+          <div class="video-banner cadastre-se">
+            <a href="formulário-cadastro/formulario.html">
+              <p>
+                Cadastre-se
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="depoimentos">
-            <h1>Depoimentos</h1>
-            <img src="assets/img/aspas-luv.png" alt="aspas" height="35" width="35" style="left: 110px;">
-            <p style="margin-left: 60px;">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid officiis debitis eaque tempore corrupti explicabo earum qui pariatur reprehenderit dicta similique eum repudiandae, nostrum eligendi mollitia neque sed itaque expedita.
-            </p>
-            <img src="assets/img/aspas-luv.png" alt="aspas" height="35" width="35" style="left: 60px;">
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid officiis debitis eaque tempore corrupti explicabo earum qui pariatur reprehenderit dicta similique eum repudiandae, nostrum eligendi mollitia neque sed itaque expedita.
-            </p>
-            <img src="assets/img/aspas-luv.png" alt="aspas" height="35" width="35" style="left: 60px;">
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid officiis debitis eaque tempore corrupti explicabo earum qui pariatur reprehenderit dicta similique eum repudiandae, nostrum eligendi mollitia neque sed itaque expedita.
-            </p>
-            <img src="assets/img/aspas-luv.png" alt="aspas" height="35" width="35" style="left: 60px;">
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid officiis debitis eaque tempore corrupti explicabo earum qui pariatur reprehenderit dicta similique eum repudiandae, nostrum eligendi mollitia neque sed itaque expedita.
-            </p>
+      <h1 data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">Depoimentos</h1>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/depoimentos/dep1.png" class="d-block" alt="Depoimentos">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/depoimentos/dep2.png" class="d-block" alt="Depoimentos">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/depoimentos/dep3.png" class="d-block" alt="Depoimentos">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/depoimentos/dep4.png" class="d-block" alt="Depoimentos">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/depoimentos/dep5.png" class="d-block" alt="Depoimentos">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/depoimentos/dep6.png" class="d-block" alt="Depoimentos">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
-    <br>
+
     <section id="faq">
-        <h1>Perguntas Frequentes.</h1>
-       <div class="pf">
-           <details>
-                <summary>Como funcionam os Planos da MGM Online?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non impedit tenetur odit sequi? Numquam eius quos molestias doloribus modi pariatur dolor odit omnis consequuntur tenetur. Magnam omnis deleniti alias!</p>
-           </details>
-           <details>
-                <summary>Preciso seguir uma ordem específica do curso?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non impedit tenetur odit sequi? Numquam eius quos molestias doloribus modi pariatur dolor odit omnis consequuntur tenetur. Magnam omnis deleniti alias!</p>
-            </details>
-            <details>
-                <summary>Quais são as formas de pagamento disponíveis?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non impedit tenetur odit sequi? Numquam eius quos molestias doloribus modi pariatur dolor odit omnis consequuntur tenetur. Magnam omnis deleniti alias!</p>
-            </details>
-            <details>
-                <summary>Qual é a duração do curso?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non impedit tenetur odit sequi? Numquam eius quos molestias doloribus modi pariatur dolor odit omnis consequuntur tenetur. Magnam omnis deleniti alias!</p>
-            </details>
-            <details>
-                <summary>Como funciona o Intercâmbio?</summary>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto non impedit tenetur odit sequi? Numquam eius quos molestias doloribus modi pariatur dolor odit omnis consequuntur tenetur. Magnam omnis deleniti alias!</p>
-            </details>
-       </div>
+      <h1 data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">Perguntas Frequentes.</h1>
+      <div class="accordion" id="accordionExample">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Como funcionam os Planos da MGM Online?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Preciso seguir uma ordem específica do curso?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Quais são as formas de pagamento disponíveis?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Qual é a duração do curso?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Como funciona o Intercâmbio?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
-    <br>
-    <section id="contact">
-        <h1>Entrar em Contato!</h1>
-        <h2>Gostaríamos de ajudá-lo a iniciar sua jornada com a MGM Online.</h2>
-        <form action="" method="post">
-            <label for="inome">Nome Completo *</label><br>
-            <input type="text" id="inome" placeholder="Nome" required size="50">
-            <p></p>
 
-            <label for="iemail">Email *</label><br>
-            <input type="email" id="iemail" placeholder="Email" required size="50">
-            <p></p>
+    <section id="contact" data-aos="fade-up"
+    data-aos-anchor="#example-anchor"
+    data-aos-offset="300"
+    data-aos-duration="3000">
+      <h1 data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">Entrar em Contato!</h1>
+      <h2>Gostaríamos de ajudá-lo a iniciar sua jornada com a MGM Online.</h2>
+      <form action="" method="post">
+          <label for="inome">Nome Completo <span style="color: red;">*</span></label><br>
+          <input type="text" id="inome" placeholder="Nome" required size="80">
+          <p></p>
 
-            <label for="ipais">País *</label><br>
-            <input type="text" id="ipais" placeholder="Digite o nome do seu país" required size="50">
-            <p></p>
+          <label for="iemail">Email <span style="color: red;">*</span></label><br>
+          <input type="email" id="iemail" placeholder="Email" required size="80">
+          <p></p>
 
-            <label for="imsg">Mensagem *</label><br>
-            <textarea id="imsg" placeholder="Mensagem" rows="10" cols="53" required></textarea>
-            <p></p>
-            <label for="itemselect">Como você ficou sabendo sobre nós?</label>
-            <p>
-                <select name="item" id="itemselect">
-                    <option value="Select">- Selecione -</option>
-                    <option value="Google">Google</option>
-                    <option value="Facebook">Facebook</option>
-                    <option value="Instagram">Instagram</option>
-                    <option value="Youtube">Youtube</option>
-                    <option value="A/P">Agência/Parceiro</option>
-                    <option value="A/C">Amigo/Colega</option>
-                    <option value="Outros">Outros</option>
-                </select>
-            </p>
-            <p>
-                <input type="checkbox" name="check" id="termo-privacidade" required>
-                <label for="termo-privacidade">Li e concordo com a <a href="#">Termos e Condições</a> e <a href="#">Política de Privacidade</a></label><br>
-            </p>
-            <p></p>
-                <div class="enviar-formulario">
-                    <button type="submit">Enviar formulário</button>
-                </div>
-        </form>
-        <img src="assets/img/image-girl-contact.jpg" alt="girl-contact" width="600" height="450">
-    </section>
+          <label for="ipais">País <span style="color: red;">*</span></label><br>
+          <input type="text" id="ipais" placeholder="Digite o nome do seu país" required size="80">
+          <p></p>
+
+          <label for="imsg">Mensagem <span style="color: red;">*</span></label><br>
+          <textarea id="imsg" placeholder=" Mensagem..." rows="10" cols="85" required></textarea>
+          <p></p>
+          <label for="itemselect">Como você ficou sabendo sobre nós?</label>
+          <p>
+              <select name="item" id="itemselect">
+                  <option value="Select">- Selecione -</option>
+                  <option value="Google">Google</option>
+                  <option value="Facebook">Facebook</option>
+                  <option value="Instagram">Instagram</option>
+                  <option value="Youtube">Youtube</option>
+                  <option value="A/P">Agência/Parceiro</option>
+                  <option value="A/C">Amigo/Colega</option>
+                  <option value="Outros">Outros</option>
+              </select>
+          </p>
+          <p>
+              <input type="checkbox" name="check" id="termo-privacidade" required>
+              <label for="termo-privacidade">Li e concordo com a <a href="#">Termos e Condições</a> e <a href="#">Política de Privacidade</a> <span style="color: red;">*</span></label><br>
+          </p>
+          <p></p>
+              <div class="enviar-formulario">
+                  <button type="submit">Enviar formulário</button>
+              </div>
+      </form>
+  </section>
+
+
+    <a href="https://api.whatsapp.com/send?phone=5511963803721&text=Ol%C3%A1!%20Estou%20com%20d%C3%BAvidas!%20Poderia%20me%20ajudar%3F" target="_blank">
+      <button id="whatsapp" onclick="chamarAtendimento()">
+        <img src="assets/img/icons8-whatsapp-48.png" alt="Símbolo de seta apontando para cima">
+      </button>
+    </a>
+
+    <button id="botao-topo" onclick="voltarParaTopo()">
+      <img src="assets/img/arrow-up.png" alt="Símbolo de seta apontando para cima">
+    </button>
+
     <footer>
-        Site desenvolvido por <a href="https://github.com/GlauberCardoso">Glauber</a>, <a href="https://github.com/JessanyKaline">Jessany</a> e <a href="https://github.com/MarcosLiborio">Marcos</a> e <a href="https://github.com/MikeVitdev">Michael</a> - Projeto da Escola <a href="https://http://somostera.com/">TERA</a> - Plataforma Educacional.
+      Site desenvolvido por <a href="https://github.com/GlauberCardoso">Glauber</a>, <a href="https://github.com/JessanyKaline">Jessany</a> e <a href="https://github.com/MarcosLiborio">Marcos</a> e <a href="https://github.com/MikeVitdev">Michael</a> - Projeto da Escola <a href="https://http://somostera.com/">TERA</a> - Plataforma Educacional.
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
-</ht1ml>
+</html>
