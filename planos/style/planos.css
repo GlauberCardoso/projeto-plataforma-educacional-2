@@ -5,6 +5,8 @@
   max-width: 960px;
 }
 
+
+
 header {
   width: 100%;
   background-color: #171846;
@@ -143,8 +145,14 @@ h1, h2, p {
 .footer img {
   width: 5em;
   height: 5em;
-  float: right;
   margin-right: 1em;
+  
+}
+
+.footer button{
+  border: none;
+  float: right;
+  background-color: none;
   
 }
 /*
@@ -158,4 +166,7 @@ h1, h2, p {
   .flex-md-equal > * {
     flex: 1;
   }
+
 }
+
+
