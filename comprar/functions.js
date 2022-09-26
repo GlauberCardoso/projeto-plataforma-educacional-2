@@ -25,16 +25,16 @@ const showData = (result) => {
   }
 }*/
 
-const options = {
+/*const options = {
    method: 'GET',
    mode: 'no-cors',
    cache: 'default'
-}
+}*/
 
 
 
 
-function buscaCep(cep) {
+/*function buscaCep(cep) {
     fetch(`https://viacep.com.br/ws/${cep}/json`, options)
       .then (response => response.json())
       .then (dados => {
@@ -44,12 +44,28 @@ function buscaCep(cep) {
         document.querySelector("#cidade").value = dados.localidade;
         document.querySelector("#uf").value = dados.uf;
   
-        /*document.querySelector("#txtNumero").focus();*/
+        document.querySelector("#txtNumero").focus();
       });
   }
 
-  buscaCep ();
+  buscaCep ();*/
 
+  AOS.init();
+
+function validaEmail (email){
+
+   email = document.querySelector("#email").value;
+
+    if(email.length < 3 || email.length > 18 ){
+      document.querySelector("#invalid-feedback").innerHTML = "Seu email não é válido";
+    }
+}
+
+
+
+
+  validaEmail();
+  
 
 
 
